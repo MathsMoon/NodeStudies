@@ -1,0 +1,21 @@
+{
+  "name": "nodestudies",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Repositório de estudos do NodeJs, diferente do cursoJs pela metodologia e ferramentas.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --watch src/server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathsMoon/NodeStudies.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathsMoon/NodeStudies/issues"
+  },
+  "homepage": "https://github.com/MathsMoon/NodeStudies#readme"
+}
