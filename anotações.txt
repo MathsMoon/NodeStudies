@@ -1,0 +1,17 @@
+Neste bloco irei escrever minhas anotações e talvez realizar um diário de programação
+para que eu não me perca ao longo do tempo.
+
+Neste primeiro momento estou iniciando a API usando: Typescript e Fastify, eu baixei 
+e configurei algumas pequenas partes para tornar mais fácil o node rodar o Typescript.
+Para começar a construir o banco de dados, o banco usado será o sqlLite e a forma que 
+o banco vai ser feito é utilizando a ferramenta do Knex.js. 
+
+O SQLlite é um banco de dados mais simples que não requer grandes conexões ou ambientes
+para que possa ser estabelecido os parâmetros necessários para seu uso, e para auxiliar
+na conexão com este tipo de banco, será utilizado o Knex, que é uma ferramenta que 
+constroi funções de forma similar a um comando do SQL, mantendo assim uma 
+compatibilidade com vários outros bancos SQL e ao mesmo tempo tornando mais fácil a 
+estabilização d como criar os modelos para usar o banco.
+
+Não consigo avançar por problemas no Knex e não faço ideia de como resolver, depois 
+vou pesquisar melhor, mas por agora é impossível.

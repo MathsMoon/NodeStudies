@@ -1,0 +1,3 @@
+Eu não consegui terminar 100% a API.
+2 aulas não carregaram no telegram e com isso eu não consegui arrumar o Regex 
+e as chamadas para organizar as rotas e as requisições, vou deixar assim e prosseguir.

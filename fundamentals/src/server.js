@@ -12,16 +12,22 @@ const server = http.createServer(async (req, res) => {
     
     // Procurando a rota dentre as que existem na routes:
     const route = routes.find(route => {
-        return route.method === method && route.path === url;
+        return route.method === method && route.path.test(url);
     });
 
     //Caso encontre o handler cuidará da requisição:
-    if(route) {
+    if (route) {
+        const routeParams = req.url.match(route.path);
+    
+        console.log(routeParams);
+
+        const { query, ...params } = routeParams.groups;
+        req.params = params;
+        req.query = query ? extractQueryParams(query) : {};
+
+        //Direcionando a rota para o handler certo:
         route.handler(req, res);
     }
-
-    //Caso contrário, retornará o err 404.
-    return res.writeHead(404).end('ESTÁ PÁGINA NÃO EXISTE');
 });
 
 
